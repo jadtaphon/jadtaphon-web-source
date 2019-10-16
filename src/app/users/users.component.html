@@ -1,0 +1,38 @@
+<!-- <table id="users">
+  <tbody>
+    <tr>
+      <th>User</th>
+      <th>Password</th>
+    </tr>
+    <tr *ngFor="let u of user">
+      <td>{{ u.value.user }} </td>
+      <td>{{ u.value.username }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<div class="container">
+  <table class="table css-serial"  >
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ลำดับ</th>
+          <th scope="col">ชื่อผู้ใช้</th>
+          <th scope="col">Username</th>
+          <th scope="col">Email</th>
+          <th scope="col">เบอร์โทรติดต่อ</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let u of user" class="thead-light">
+        <tr>
+          <td></td>
+          <td>{{ u.value.username}}</td>
+          <td>{{ u.value.user }}</td>
+          <td>{{ u.value.email }}</td>
+          <td>{{ u.value.phone }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+      

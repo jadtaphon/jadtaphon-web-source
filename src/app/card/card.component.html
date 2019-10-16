@@ -1,0 +1,32 @@
+<!-- <div class="container">
+    <div class="card" *ngFor="let friend of friends" style="width: 18rem;">
+        <img class="card-img-top" src="{{'assets/images/'+friend.pic}}" alt=" " >
+        <div class="card-body">
+          <p class="card-text"><b>{{friend.name}}</b></p>
+          <p class="card-text">{{friend.position}}</p>
+        </div>
+      </div>
+ 
+<div> -->
+  <div class="container">
+      <div class="card-deck">
+          <div class="card" *ngFor="let friend of friends" style="width: 21rem;">
+            <img class="card-img-top" src="{{'assets/images/'+friend.pic}}" alt="Avatar">
+            <div class="card-body"></div>
+            <div class="card-footer">
+              <h5 class="card-title"><b>{{friend.name}}</b></h5>
+              <p class="card-text">{{friend.position}}</p>
+            </div>
+          </div>
+        </div>
+  </div>
+    
+    <!-- <div class="card-group">
+        <div class="card" *ngFor="let friend of friends">
+          <img class="card-img-top" src="{{'assets/images/'+friend.pic}}" alt="Avatar">
+          <div class="card-body">
+            <h5 class="card-title"><b>{{friend.name}}</b></h5>
+            <p class="card-text">{{friend.position}}</p>
+          </div>
+        </div>
+      </div> -->
