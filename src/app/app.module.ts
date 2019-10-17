@@ -19,7 +19,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { from } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { TestComponent } from './test/test.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +30,6 @@ import { TestComponent } from './test/test.component';
     HomeComponent,
     RegisterComponent,
     UsersComponent,
-    TestComponent
   ],
   imports: [
     BrowserModule,
